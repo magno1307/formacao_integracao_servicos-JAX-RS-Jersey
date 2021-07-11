@@ -28,6 +28,6 @@ public class CarrinhoResource {
 	public String adiciona(String conteudo) {
 		Carrinho carrinho = (Carrinho) new XStream().fromXML(conteudo);	
 		new CarrinhoDAO().adiciona(carrinho);
-		return "<status> Sucesso </status>";
+		return "<status>Sucesso</status>";
 	}
 }
